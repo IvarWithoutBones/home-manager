@@ -13,11 +13,11 @@ with lib;
         map-syntax = [ "*.jenkinsfile:Groovy" "*.props:Java Properties" ];
       };
 
-      themes.testtheme = ''
+      themes.testtheme.src = pkgs.writeText "testtheme.tmTheme" ''
         This is a test theme.
       '';
 
-      syntaxes.testsyntax = ''
+      syntaxes.testsyntax.src = pkgs.writeText "testsyntax.sublime-syntax" ''
         This is a test syntax.
       '';
     };
