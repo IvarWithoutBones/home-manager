@@ -13,11 +13,11 @@
     assertFileExists home-files/.bashrc
     assertFileContains \
       home-files/.bashrc \
-      'eval "$(@thefuck@/bin/thefuck --alias)"'
+      'eval "$(@thefuck@/bin/thefuck '"'"'--alias'"'"')"'
 
     assertFileExists home-files/.zshrc
     assertFileContains \
       home-files/.zshrc \
-      'eval "$(@thefuck@/bin/thefuck --alias)"'
+      'eval "$(@thefuck@/bin/thefuck '"'"'--alias'"'"')"'
   '';
 }
